@@ -1,67 +1,38 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Seal_of_the_United_States_Department_of_State.svg/900px-Seal_of_the_United_States_Department_of_State.svg.png?20221223190010" type="jpeg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Index</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="Styles/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
     </head>
+   
+
     <body>
-        
-        <button onclick="my_func()" style="height: 10px; width: 30px;">
-        </button>
-        <div id = "listofnames">
 
-        </div>
-        <p id = "FirstProgram">
+       
+        <ul class = "navbar">
+            
+            <li class="navtab"><a href="#home">Home</a></li>
+            <li class="navtab"><a href="#leaders">Leaders</a></li>
+            <li class="navtab"><a href="#senators">Senators</a></li>
+            <img src= "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg"
+                    width="100"  alt="" /> 
+            <li class="navtab" style="float:right"><a href="#about">About</a></li>
+          </ul>
+    
+    
+<div class="RDI_Gallery">
 
-        </p>
-        <script>
-            function my_func()
-            {
-                // let hour = new Date().getHours();
-                // let greetings;
-                // switch(hour < 18)
-                // {
-                //     case true:
-                //         greetings = "Good Day!"
-                //         break;
-                //     case false:
-                //         greetings = "Good Night!"
-                //         break;
-                //     default:
-                //         break;
-
-                // }
-                // if (hour < 18)
-                // {
-                //     greetings = "Good Day!"
-                // }
-                // else
-                // {
-                //     greetings = "Good Evening!"
-                // }
-                cars = ["A", "B", "C", "D", "E"]
-                text = ""
-                const cities = {Beijing: 22, italy: 11, japan: 16,indonasia: 19 }
-                for(const car of cars)
-                {
-                    text += `Hello World, Car ${car}` + "<br>"
-                }
-                for(const city in cities)
-                {
-                    text += `Hello World, Car ${city}` + "<br>"
-                }
-                document.getElementById("FirstProgram").innerHTML = text 
-            }
-        </script>
-        <script src="./Javascript/script.js" async defer>
-        </script>
+        <img class="RDI" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Republicanlogo.svg/900px-Republicanlogo.svg.png" alt="Republican">
+        <img class="RDI" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Democratic_Disc.svg/800px-Democratic_Disc.svg.png" alt="Democrat">
+        <img class="RDI" src="otherpparties.png" alt="Independent">
+    </div>
+    
     </body>
 </html>
