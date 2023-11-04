@@ -1,38 +1,331 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Seal_of_the_United_States_Department_of_State.svg/900px-Seal_of_the_United_States_Department_of_State.svg.png?20221223190010" type="jpeg">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Index</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-        <link rel="stylesheet" href="Styles/styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
-    </head>
-   
-
-    <body>
-
-       
-        <ul class = "navbar">
-            
-            <li class="navtab"><a href="#home">Home</a></li>
-            <li class="navtab"><a href="#leaders">Leaders</a></li>
-            <li class="navtab"><a href="#senators">Senators</a></li>
-            <img src= "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg"
-                    width="100"  alt="" /> 
-            <li class="navtab" style="float:right"><a href="#about">About</a></li>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./Styles/styles.css" />
+  </head>
+  <body id="body" class="zero_margin_padding">
+    <div>
+      <!-- Header and Navigation Bar -->
+      <header>
+        <div id="nav_bar">
+          <ul class="zero_margin_padding nav_bar_links">
+            <li id="nav_bar_link" onclick="add_element_to_view(this)">
+              <a class="remove_blue_underline nav_bar_text_color"> Home </a>
+            </li>
+            <li id="nav_bar_link" onclick="add_element_to_view(this)">
+              <a class="remove_blue_underline nav_bar_text_color"> Party </a>
+            </li>
+            <li id="nav_bar_link" onclick="add_element_to_view(this)">
+              <a class="remove_blue_underline nav_bar_text_color"> Leaders </a>
+            </li>
+            <li id="nav_bar_link" onclick="add_element_to_view(this)">
+              <a class="remove_blue_underline nav_bar_text_color"> Senators </a>
+            </li>
+            <li id="nav_bar_link" onclick="add_element_to_view(this)">
+              <a class="remove_blue_underline nav_bar_text_color"> About </a>
+            </li>
           </ul>
-    
-    
-<div class="RDI_Gallery">
+        </div>
+        <div id="hamburger_img" style="padding: 4px">
+          <img class="height_20px" src="./Images/hamburger_icon_open.png" />
+        </div>
+      </header>
 
-        <img class="RDI" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Republicanlogo.svg/900px-Republicanlogo.svg.png" alt="Republican">
-        <img class="RDI" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Democratic_Disc.svg/800px-Democratic_Disc.svg.png" alt="Democrat">
-        <img class="RDI" src="otherpparties.png" alt="Independent">
+      <!-- Main -->
+      <main id="main_id">
+        <!-- TOTAL PARTY SECTION -->
+        <div
+          class="padding_two_per text_align_webkit_center"
+          name="Total_Party_Section"
+          id="Total_Party_Section"
+        >
+          <p
+            data-text="Party"
+            class="font_size_x_large font_weight_bold dark_brown_txt text_animation"
+          >
+            Party
+          </p>
+          <hr id="horizontal_rule_id" />
+          <div id="total_party_id">
+            <div class="container">
+              <div id="party_image_id" class="card border_primary">
+                <div class="front">
+                  <img
+                    class="party_class"
+                    src="Images/democratic_logo.png"
+                    alt="democrat logo"
+                  />
+                  <p class="font_size_x_large font_weight_bold old_glory_blue">
+                    Democrat
+                  </p>
+                </div>
+                <div class="back">
+                  <p
+                    id="total_demo"
+                    class="font_size_xx_large font_weight_bold old_glory_blue text_align_center"
+                  ></p>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div id="party_image_id" class="card border_primary">
+                <div class="front">
+                  <img
+                    class="party_class"
+                    src="Images/independent_party_logo.png"
+                    alt="independent logo"
+                  />
+                  <p class="font_size_x_large font_weight_bold old_glory_blue">
+                    Independent
+                  </p>
+                </div>
+                <div class="back">
+                  <p
+                    id="total_indep"
+                    class="font_size_xx_large font_weight_bold old_glory_blue text_align_center"
+                  ></p>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div id="party_image_id" class="card border_primary">
+                <div class="front">
+                  <img
+                    class="party_class"
+                    src="./Images/republican_logo.png"
+                    alt="republican logo"
+                  />
+                  <p class="font_size_x_large font_weight_bold old_glory_blue">
+                    Republican
+                  </p>
+                </div>
+                <div class="back">
+                  <p
+                    id="total_rep"
+                    class="font_size_xx_large font_weight_bold old_glory_blue text_align_center"
+                  ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEADERSHIP ROLE SECTION -->
+        <div name="Leadership_Role_Section" id="Leadership_Role_Section">
+          <div class="text_align_center">
+            <p
+              data-text="Top Leadership"
+              class="font_size_x_large font_weight_bold dark_brown_txt text_animation"
+            >
+              Top Leadership
+            </p>
+            <hr id="horizontal_rule_id" />
+            <div class="flex_center">
+              <div id="top_leadership_id">
+                <div style="max-width: 400px; min-width: 100px">
+                  <p class="leadership_id">Democrat</p>
+                  <div id="list_of_demo_leaders"></div>
+                </div>
+                <div style="max-width: 400px; min-width: 100px">
+                  <p class="leadership_id">Republican</p>
+                  <div id="list_of_rep_leaders"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SENATOR TABLE SECTION -->
+        <div name="Senator_Table_Section" id="Senator_Table_Section">
+          <div name="Senators_Section" class="text_align_center">
+            <p
+              data-text="Senator Table"
+              class="font_size_x_large font_weight_bold dark_brown_txt text_animation"
+            >
+              Senator Table
+            </p>
+            <hr id="horizontal_rule_id" />
+          </div>
+
+          <div class="flex_center" style="gap: 10px">
+            <div style="align-self: end">
+              <p class="filter_class">Filter By:</p>
+            </div>
+
+            <div id="main_filter_id">
+              <!-- Party Filter -->
+              <div id="filter_party_id" style="display: block">
+                <input
+                  class="filter_search_box"
+                  id="filter_party_input"
+                  type="search"
+                  placeholder="Party"
+                />
+                <div id="filter_party_list"></div>
+              </div>
+
+              <!-- State Filter -->
+              <div id="filter_state_id" style="display: block">
+                <input
+                  class="filter_search_box"
+                  id="filter_state_input"
+                  type="search"
+                  placeholder="State"
+                />
+                <div id="filter_state_list"></div>
+              </div>
+
+              <!-- Rank Filter -->
+              <div id="filter_rank_id" style="display: block">
+                <input
+                  class="filter_search_box"
+                  id="filter_rank_input"
+                  type="search"
+                  placeholder="Rank"
+                />
+                <div id="filter_rank_list"></div>
+              </div>
+            </div>
+          </div>
+
+          <div name="Senator_Table" class="padding_two_per" name="Senator List">
+            <div class="table" id="senators_list_id"></div>
+            <div class="flex_center" id="button_list_id"></div>
+          </div>
+        </div>
+
+        <!-- popup -->
+        <div
+          onclick="close_popup()"
+          id="popup_background"
+          class="remove_tag"
+        ></div>
+        <dialog id="popupid">
+          <div>
+            <img id="photo_id" alt="Senator Photo" />
+            <img
+              id="popup_close"
+              src="./Images/close_btn.png"
+              alt="Close Icon"
+              onclick="close_popup()"
+            />
+            <div style="padding: 20px; text-align: center">
+              <div class="padding_two_per">
+                <p class="popup_header">Name</p>
+                <p id="name_id"></p>
+              </div>
+              <div class="padding_two_per">
+                <p class="popup_header">Office</p>
+                <p id="office_id"></p>
+              </div>
+              <div class="padding_two_per">
+                <p class="popup_header">Date of Birth</p>
+                <p id="dob_id"></p>
+              </div>
+              <div class="padding_two_per">
+                <p class="popup_header">Start Date</p>
+                <p id="startdate_id"></p>
+              </div>
+              <div class="flex_center social_media_box">
+                <div class="flex_center">
+                  <img src="./Images/youtube.png" style="height: 30px" alt="" />
+                  <a
+                    class="remove_blue_underline nav_bar_text_color"
+                    id="youtube_id"
+                    style="align-self: center"
+                    href="#"
+                    target="_blank"
+                    >Youtube</a
+                  >
+                </div>
+                <div class="flex_center">
+                  <img src="./Images/twitter.png" style="height: 30px" alt="" />
+                  <a
+                    class="remove_blue_underline nav_bar_text_color"
+                    id="twitter_id"
+                    style="align-self: center"
+                    href="#"
+                    target="_blank"
+                    >Twitter</a
+                  >
+                </div>
+                <div class="flex_center">
+                  <img src="./Images/link.png" style="height: 30px" alt="" />
+                  <a
+                    class="remove_blue_underline nav_bar_text_color"
+                    id="link_id"
+                    style="align-self: center"
+                    href="#"
+                    target="_blank"
+                    >Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+
+        <!-- ABOUT SECTION -->
+        <div name="About_Section" id="About_Section">
+          <div class="text_align_center" style="padding-bottom: 1%">
+            <p
+              data-text="About"
+              class="font_size_x_large font_weight_bold dark_brown_txt text_animation"
+            >
+              About
+            </p>
+            <hr id="horizontal_rule_id" />
+          </div>
+          <!-- Video - Tag -->
+          <div class="text_align_center">
+            <video id="intro_video_tag" autoplay loop muted width="100%">
+              <source
+                style="z-index: -100"
+                src="./Videos/Virtual_US_Capitol_Tour.mp4"
+                type="video/mp4"
+              />
+              Browser does not support this video.
+            </video>
+          </div>
+          <div class="flex_center" style="margin-bottom: 100px">
+            <div
+              id="about_id"
+              class="text_align_center border_primary margin_two_per"
+            >
+              <p class="font_size_x_large font_weight_bold dark_brown_txt">
+                Info
+              </p>
+              <p class="darkish_brown_txt margin_two_per">
+                Welcome to the official website dedicated to the distinguished
+                members of the United States Senate. The U.S. Senate is one of
+                the two chambers of Congress, the legislative branch of the
+                federal government, and plays a vital role in shaping the
+                nation's laws and policies. The U.S. Senate is composed of 100
+                Senators, two from each state. Senators are elected to represent
+                the interests and voices of their constituents. They participate
+                in the lawmaking process, vote on critical issues, and work to
+                address the needs and concerns of the American people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Footer Bar -->
+      <footer>
+        <div id="footer">
+          <p class="align_self_center">© Senator Website</p>
+        </div>
+      </footer>
     </div>
-    
-    </body>
+    <script src="./Javascript/script.js"></script>
+  </body>
 </html>

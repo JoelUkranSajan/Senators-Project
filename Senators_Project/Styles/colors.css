@@ -1,0 +1,81 @@
+/* 
+┏┓  ┓     
+┃ ┏┓┃┏┓┏┓┏
+┗┛┗┛┗┗┛┛ ┛ 
+          */
+
+:root {
+    --nav_bar_text_color: #E1C78F;
+    --white: #faf0e6;
+    --red: red;
+    --blue: blue;
+    --black: black;
+    --antiquewhite: antiquewhite;
+    --darkbrown: #B0926A;
+    --darkbrowntext: #706233;
+    --darkbrownbr: #706233; 
+    --chocolate: chocolate;
+    --nav_bar_border: #F4BF96;
+    --seashell: seashell;
+    --bisque: bisque;
+}
+
+.dark_brown_txt
+{
+    color: var(--darkbrowntext);
+}
+
+.dark_brown_bg
+{
+    background-color: var(--darkbrowntext);
+}
+
+.dark_brown_br
+{
+    border-color: var(--darkbrownbr);
+}
+
+.darkish_brown_txt
+{
+    color: #B0926A;
+}
+
+.darkish_brown_bg
+{
+    background-color: #B0926A;
+}
+
+.light_brown_txt
+{
+    color: #E1C78F;
+}
+
+.light_brown_bg
+{
+    background-color: #E1C78F;
+}
+
+.light_yellow_txt
+{
+    color: #FAE7C9;
+}
+
+.light_yellow_bg
+{
+    background-color: #FAE7C9;
+}
+
+.old_glory_blue
+{
+    color: #002664;
+}
+
+.old_glory_red
+{
+    color: #B22234;
+}
+
+.black
+{
+    color: black
+}

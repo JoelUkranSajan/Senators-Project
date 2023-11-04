@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            *
+            {
+                padding: 0;
+                margin: 0;
+            }
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: #252839;
+            }
+            .text_animation
+            {
+                position: relative;
+                font-size: 14vw;
+                color: #252839;
+                -webkit-text-stroke: 0.1vw green;
+                text-transform: uppercase;
+            }
+            .text_animation::before
+            {
+                content: attr(data-text);
+                position: absolute;
+                width: 0px;
+                color: green;
+                border-right: 0.5vw solid green;
+                overflow: hidden;
+                animation: animate 6s linear infinite;
+                animation-iteration-count: 5;
+            }
+
+            @keyframes animate {
+                0%,100%
+                {
+                  width: 0px;
+                } 
+                90%
+                {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
