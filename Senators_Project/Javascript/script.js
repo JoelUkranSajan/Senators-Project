@@ -128,7 +128,6 @@ function add_element_to_view(element) {
       for (const min_id of main_id.children) {
         min_id.classList.remove("remove_tag");
       }
-      popup_bg.classList.add("remove_tag");
     } else if (selected_tab == "Party") {
       for (const min_id of main_id.children) {
         min_id.classList.add("remove_tag");
@@ -158,6 +157,8 @@ function add_element_to_view(element) {
         }
       }
     }
+    popup.classList.remove("remove_tag")
+    popup_bg.classList.add("remove_tag");
   } catch (error) {
     // Code to handle the exception
     console.error("Function - add_element_to_view:", error.message);
@@ -515,8 +516,8 @@ function populate_senator_table(button_index) {
   }
 }
 
-let popup = document.getElementById("popupid");
-let popup_bg = document.getElementById("popup_background");
+const popup = document.getElementById("popupid");
+const popup_bg = document.getElementById("popup_background");
 
 async function close_popup() {
   popup.classList.remove("animate_popup_in");
