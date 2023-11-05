@@ -110,7 +110,7 @@ async function shake_animation_add() {
       index = index + 1;
     }
     shakes++;
-    if (shakes == 5) {
+    if (shakes == 4) {
       clearInterval(shake_the_cards);
     }
   } catch (error) {
@@ -120,7 +120,7 @@ async function shake_animation_add() {
 }
 
 //Every 5 seconds the cards shake for 5 times
-const shake_the_cards = setInterval(shake_animation_add, 5000);
+const shake_the_cards = setInterval(shake_animation_add, 2000);
 
 //***************************** Pop Up Functions *************************************//
 
