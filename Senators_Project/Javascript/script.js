@@ -119,6 +119,72 @@ async function shake_animation_add() {
   }
 }
 
+//Every 5 seconds the cards shake for 5 times
+const shake_the_cards = setInterval(shake_animation_add, 5000);
+
+//***************************** Pop Up Functions *************************************//
+
+const popup = document.getElementById("popupid");
+const popup_bg = document.getElementById("popup_background");
+
+// Function to close the popup
+async function close_popup() {
+  popup.classList.remove("animate_popup_in");
+  popup.classList.add("animate_popup_out");
+  popup_bg.classList.add("remove_tag");
+  await sleep(400);
+  popup.close();
+}
+
+// Function to display the popup
+function display_detils_popup(main_element) {
+  try {
+    console.log(senators_object_list);
+    const selectedname = main_element.children[1].textContent;
+    const nameid = document.getElementById("name_id");
+    const officeid = document.getElementById("office_id");
+    const dobid = document.getElementById("dob_id");
+    const startdateid = document.getElementById("startdate_id");
+    const youtubeid = document.getElementById("youtube_id");
+    const twitterid = document.getElementById("twitter_id");
+    const linkid = document.getElementById("link_id");
+    const photo = document.getElementById("photo_id");
+    popup_bg.classList.remove("remove_tag");
+    popup.show();
+    popup.classList.remove("animate_popup_out");
+    popup.classList.add("animate_popup_in");
+    for (senator of senators_object_list) {
+      if (senator.name == selectedname) {
+        photo.src =
+          senator.gender == "Male"
+            ? "../Images/male_profile.png"
+            : "../Images/female_profile.png";
+        nameid.textContent = senator.name;
+        officeid.textContent = senator.office;
+        const senator_startdate = senator.startdate.toString().split("-");
+        startdateid.textContent =
+          senator_startdate[2] +
+          "/" +
+          senator_startdate[1] +
+          "/" +
+          senator_startdate[2];
+        const dob_split = senator.dob.toString().split("-");
+        dobid.textContent =
+          dob_split[2] + "/" + dob_split[1] + "/" + dob_split[2];
+        youtubeid.href = "https://www.youtube.com/@" + senator.youtubelink;
+        twitterid.href = "https://twitter.com/" + senator.twitterlink;
+        linkid.href = senator.senatorlink;
+        photo.src = senator.photo;
+      }
+    }
+  } catch (error) {
+    // Code to handle the exception
+    console.error("Function - display_detils_popup:", error.message);
+  }
+}
+
+//***************************** Nav Bar Menu Functions *************************************//
+
 function add_element_to_view(element) {
   try {
     scrollToTop();
@@ -157,7 +223,7 @@ function add_element_to_view(element) {
         }
       }
     }
-    popup.classList.remove("remove_tag")
+    popup.classList.remove("remove_tag");
     popup_bg.classList.add("remove_tag");
   } catch (error) {
     // Code to handle the exception
@@ -171,9 +237,6 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
-
-//Every 5 seconds the cards shake for 5 times
-const shake_the_cards = setInterval(shake_animation_add, 5000);
 
 //***************************** TASKS *************************************//
 
@@ -360,6 +423,7 @@ const republic_icon =
 const indep_icon =
   '<img src="../Images/independent_party_logo.png" style="width:65%;"></img>';
 
+// Function to get the images for the table
 function generate_images(gender, party) {
   let profile_image = gender == "Male" ? male_profile : female_profile;
   let gender_image = gender == "Male" ? male_gender : female_gender;
@@ -384,6 +448,8 @@ function generate_images(gender, party) {
 
 let main_filter_list = [];
 
+// Function to get the list of filters applied to a main filter list
+// This main filter list is used to filter the senator table
 function filter_with_filters() {
   try {
     let filter_by = ["party", "state", "rank"];
@@ -448,7 +514,7 @@ function candidate_filter_function(filtered_list) {
   }
 }
 
-// Function to return a list of senators
+// Function to create each and every cell of the senator table
 function populate_senator_table(button_index) {
   try {
     //Filter by Party as default
@@ -516,62 +582,7 @@ function populate_senator_table(button_index) {
   }
 }
 
-const popup = document.getElementById("popupid");
-const popup_bg = document.getElementById("popup_background");
-
-async function close_popup() {
-  popup.classList.remove("animate_popup_in");
-  popup.classList.add("animate_popup_out");
-  popup_bg.classList.add("remove_tag");
-  await sleep(400);
-  popup.close();
-}
-
-function display_detils_popup(main_element) {
-  try {
-    console.log(senators_object_list);
-    const selectedname = main_element.children[1].textContent;
-    const nameid = document.getElementById("name_id");
-    const officeid = document.getElementById("office_id");
-    const dobid = document.getElementById("dob_id");
-    const startdateid = document.getElementById("startdate_id");
-    const youtubeid = document.getElementById("youtube_id");
-    const twitterid = document.getElementById("twitter_id");
-    const linkid = document.getElementById("link_id");
-    const photo = document.getElementById("photo_id");
-    popup_bg.classList.remove("remove_tag");
-    popup.show();
-    popup.classList.remove("animate_popup_out");
-    popup.classList.add("animate_popup_in");
-    for (senator of senators_object_list) {
-      if (senator.name == selectedname) {
-        photo.src =
-          senator.gender == "Male"
-            ? "../Images/male_profile.png"
-            : "../Images/female_profile.png";
-        nameid.textContent = senator.name;
-        officeid.textContent = senator.office;
-        const senator_startdate = senator.startdate.toString().split("-");
-        startdateid.textContent =
-          senator_startdate[2] +
-          "/" +
-          senator_startdate[1] +
-          "/" +
-          senator_startdate[2];
-        const dob_split = senator.dob.toString().split("-");
-        dobid.textContent =
-          dob_split[2] + "/" + dob_split[1] + "/" + dob_split[2];
-        youtubeid.href = "https://www.youtube.com/@" + senator.youtubelink;
-        twitterid.href = "https://twitter.com/" + senator.twitterlink;
-        linkid.href = senator.senatorlink;
-        photo.src = senator.photo;
-      }
-    }
-  } catch (error) {
-    // Code to handle the exception
-    console.error("Function - display_detils_popup:", error.message);
-  }
-}
+// Function to populate the buttons for the senator table
 
 function populate_button_list(num_of_buttons) {
   try {
@@ -591,6 +602,7 @@ function populate_button_list(num_of_buttons) {
   }
 }
 
+// Function to replace Party , State and Rank when All is selected
 function main_filter_function(filter, filter_id) {
   try {
     let filter_head = document.getElementById(filter_id);
@@ -611,6 +623,8 @@ function main_filter_function(filter, filter_id) {
   }
 }
 
+// Function to populate the list filter options for the senator table like for Party,
+//it is Democrat, Republican and Independent and so on for others
 function populate_filters(filter_array) {
   try {
     const all_list = ["All"];
