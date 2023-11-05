@@ -197,28 +197,36 @@ function add_element_to_view(element) {
     } else if (selected_tab == "Party") {
       for (const min_id of main_id.children) {
         min_id.classList.add("remove_tag");
+        min_id.classList.remove('animate_popup_in');
         if (min_id.id.toString().includes("Total_Party_Section")) {
+          min_id.classList.add('animate_popup_in');
           min_id.classList.remove("remove_tag");
         }
       }
     } else if (selected_tab == "Leaders") {
       for (const min_id of main_id.children) {
         min_id.classList.add("remove_tag");
+        min_id.classList.remove('animate_popup_in');
         if (min_id.id.toString().includes("Leadership_Role_Section")) {
+          min_id.classList.add('animate_popup_in')
           min_id.classList.remove("remove_tag");
         }
       }
     } else if (selected_tab == "Senators") {
       for (const min_id of main_id.children) {
         min_id.classList.add("remove_tag");
+        min_id.classList.remove('animate_popup_in');
         if (min_id.id.toString().includes("Senator_Table_Section")) {
+          min_id.classList.add('animate_popup_in')
           min_id.classList.remove("remove_tag");
         }
       }
     } else if (selected_tab == "About") {
       for (const min_id of main_id.children) {
         min_id.classList.add("remove_tag");
+        min_id.classList.remove('animate_popup_in');
         if (min_id.id.toString().includes("About_Section")) {
+          min_id.classList.add('animate_popup_in')
           min_id.classList.remove("remove_tag");
         }
       }
