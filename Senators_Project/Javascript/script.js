@@ -407,9 +407,9 @@ function get_list_of_all_leaders_with_party() {
 //TASK 3
 
 const male_profile =
-  '<img src="../Images/male_profile.png" style="min-height:55%; max-height:75%; max-width:70%;"></img>';
+  '<img src="../Images/male_profile.png" class="table_profile_photo"></img>';
 const female_profile =
-  '<img src="../Images/female_profile.png" style="min-height:55%; max-height:75%; max-width:70%;"></img>';
+  '<img src="../Images/female_profile.png" class="table_profile_photo"></img>';
 
 const male_gender =
   '<img src="../Images/male_icon.png" style="width:50%;"></img>';

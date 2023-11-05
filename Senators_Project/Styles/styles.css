@@ -272,6 +272,12 @@ hr {
   margin: 0 auto;
 }
 
+.table_profile_photo
+{ 
+  max-height:75%;
+  max-width:70%;
+}
+
 .head_cell,
 .cell,
 .profile_cell {
@@ -404,7 +410,24 @@ video::-webkit-media-controls {
   box-shadow: 10px 10px 100px #FF8080, 10px 10px brown;
 }
 
+/* Footer Bar */
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--chocolate);
+}
+
+
+/* **********************************************Animations************************************* */
+
 /* Popup Message */
+
 #popup_background
 {
   position: fixed;
@@ -419,20 +442,40 @@ video::-webkit-media-controls {
 }
 
 #popupid{
-  background: linear-gradient(45deg, var(--darkbrown), var(--antiquewhite)); 
+  background: linear-gradient(45deg, #FF9209, #363062); 
   border-radius: 30px;
   border: none;
   color:beige; 
   font-size: large;
   text-align: center;
   position: fixed;
-  top: 10vh;
+  top: 20vh;
   left: 5vw;
   width: 80%; 
   max-width: 400px; 
   z-index: 3;
   font-family: var(--gillfont);
 }
+
+#photo_id
+{
+  width: 50%; 
+  position: relative;
+  margin-top: -35%; 
+  border-radius: 50%;
+}
+
+#popup_close
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-height: 10px;
+  padding: 15px; 
+  max-height: 30px;
+  cursor: pointer;
+}
+
 .popup_header
 {
   color: var(--darkbrowntext);
@@ -486,40 +529,6 @@ video::-webkit-media-controls {
   }  
 }
 
-#photo_id
-{
-  width: 50%; 
-  position: relative;
-  margin-top: -15%; 
-  border-radius: 50%;
-}
-
-#popup_close
-{
-  position: absolute;
-  right: 0;
-  top: 0;
-  min-height: 10px;
-  padding: 10px; 
-  max-height: 30px;
-  cursor: pointer;
-}
-
-/* Footer Bar */
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 50px;
-  background-color: var(--chocolate);
-}
-
-
-/* **********************************************Animations************************************* */
 
 .text_animation {
   position: relative;
