@@ -112,17 +112,17 @@ hr {
   z-index: 2;
 }
 
-#nav_bar_link {
+.nav_bar_link {
   padding: 10px;
   border-right: 1px solid var(--nav_bar_border);
   cursor: pointer;
 }
 
-#nav_bar_link:hover:not(#nav_bar_link:last-child) {
+.nav_bar_link:hover:not(.nav_bar_link:last-child) {
   background-color: var(--darkbrown);
 }
 
-#nav_bar_link:last-child {
+.nav_bar_link:last-child {
   background-color: var(--darkbrown);
   position: fixed;
   right: 0;
@@ -638,11 +638,11 @@ video::-webkit-media-controls {
     }
   }
 
-  #nav_bar_link {
+  .nav_bar_link {
     border-bottom: 1px solid var(--nav_bar_border);
   }
 
-  #nav_bar_link:last-child {
+  .nav_bar_link:last-child {
     position: static;
   }
 
