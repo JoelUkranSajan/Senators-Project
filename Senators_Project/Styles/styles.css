@@ -162,12 +162,13 @@ hr {
 
 #total_party_id {
   display: flex;
+  width: 100%;
+  padding: 10px;
   justify-content: space-evenly;
   flex-wrap: wrap;
   overflow: hidden;
-  padding: 10px;
-  gap: 15px;
   max-width: 900px;
+  gap: 15px;
 }
 
 #party_image_id {
