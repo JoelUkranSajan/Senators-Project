@@ -128,7 +128,7 @@ hr {
   right: 0;
 }
 
-#horizontal_rule_id {
+.horizontal_rule_id {
   width: 50%;
   height: 5px;
   border: none;
@@ -171,18 +171,18 @@ hr {
   gap: 15px;
 }
 
-#party_image_id {
+.party_image_id {
   cursor: pointer;
   background: linear-gradient(-45deg, var(--red), var(--blue));
   box-shadow: 7px 7px 14px #b9b9b9;
 }
 
-#party_image_id > *
+.party_image_id > *
 {
   text-shadow: 0.1em 0.1em white;
 }
 
-#party_image_id:hover {
+.party_image_id:hover {
   background-color: var(--darkbrown);
   transform: scale(1.05) rotateY(180deg);
 }

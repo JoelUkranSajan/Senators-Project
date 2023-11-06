@@ -42,7 +42,6 @@
         <!-- TOTAL PARTY SECTION -->
         <div
           class="padding_two_per text_align_center"
-          name="Total_Party_Section"
           id="Total_Party_Section"
         >
           <p
@@ -51,11 +50,11 @@
           >
             Party
           </p>
-          <hr id="horizontal_rule_id">
+          <hr class="horizontal_rule_id">
           <div class="flex_center">
             <div id="total_party_id">
               <div class="container">
-                <div id="party_image_id" class="card border_primary">
+                <div class="card border_primary party_image_id">
                   <div class="front">
                     <img
                       class="party_class"
@@ -75,7 +74,7 @@
                 </div>
               </div>
               <div class="container">
-                <div id="party_image_id" class="card border_primary">
+                <div class="card border_primary party_image_id">
                   <div class="front">
                     <img
                       class="party_class"
@@ -95,7 +94,7 @@
                 </div>
               </div>
               <div class="container">
-                <div id="party_image_id" class="card border_primary">
+                <div class="card border_primary party_image_id">
                   <div class="front">
                     <img
                       class="party_class"
@@ -119,7 +118,7 @@
         </div>
 
         <!-- LEADERSHIP ROLE SECTION -->
-        <div name="Leadership_Role_Section" id="Leadership_Role_Section">
+        <div id="Leadership_Role_Section">
           <div class="text_align_center">
             <p
               data-text="Top Leadership"
@@ -127,7 +126,7 @@
             >
               Top Leadership
             </p>
-            <hr id="horizontal_rule_id" >
+            <hr class="horizontal_rule_id" >
             <div class="flex_center">
               <div id="top_leadership_id">
                 <div style="max-width: 400px; min-width: 100px">
@@ -144,15 +143,15 @@
         </div>
 
         <!-- SENATOR TABLE SECTION -->
-        <div name="Senator_Table_Section" id="Senator_Table_Section">
-          <div name="Senators_Section" class="text_align_center">
+        <div id="Senator_Table_Section">
+          <div class="text_align_center">
             <p
               data-text="Senator Table"
               class="font_size_x_large font_weight_bold dark_brown_txt text_animation"
             >
               Senator Table
             </p>
-            <hr id="horizontal_rule_id" >
+            <hr class="horizontal_rule_id" >
           </div>
 
           <div class="flex_center" style="gap: 10px">
@@ -196,7 +195,7 @@
             </div>
           </div>
 
-          <div name="Senator_Table" class="padding_two_per" name="Senator List">
+          <div class="padding_two_per">
             <div class="table" id="senators_list_id"></div>
             <div class="flex_center" id="button_list_id"></div>
           </div>
@@ -211,7 +210,9 @@
 
         <dialog id="popupid">
           <div>
-            <img id="photo_id" alt="Senator Photo" >
+            <img id="photo_id" 
+            src="./Images/male_icon.png"
+            alt="Senator Photo" >
             <img
               id="popup_close"
               src="./Images/close_btn.png"
@@ -275,7 +276,7 @@
         </dialog>
 
         <!-- ABOUT SECTION -->
-        <div name="About_Section" id="About_Section">
+        <div id="About_Section">
           <div class="text_align_center" style="padding-bottom: 1%">
             <p
               data-text="About"
@@ -283,11 +284,11 @@
             >
               About
             </p>
-            <hr id="horizontal_rule_id" >
+            <hr class="horizontal_rule_id" >
           </div>
           <!-- Video - Tag -->
           <div class="text_align_center">
-            <video id="intro_video_tag" autoplay loop muted width="100%">
+            <video id="intro_video_tag" autoplay loop muted>
               <source
                 style="z-index: -100"
                 src="./Videos/Virtual_US_Capitol_Tour.mp4"
