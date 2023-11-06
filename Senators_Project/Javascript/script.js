@@ -415,21 +415,21 @@ function get_list_of_all_leaders_with_party() {
 //TASK 3
 
 const male_profile =
-  '<img src="../Images/male_profile.png" class="table_profile_photo"></img>';
+  '<img src="./Images/male_profile.png" class="table_profile_photo"></img>';
 const female_profile =
-  '<img src="../Images/female_profile.png" class="table_profile_photo"></img>';
+  '<img src="./Images/female_profile.png" class="table_profile_photo"></img>';
 
 const male_gender =
-  '<img src="../Images/male_icon.png" style="width:50%;"></img>';
+  '<img src="./Images/male_icon.png" style="width:50%;"></img>';
 const female_gender =
-  '<img src="../Images/female_icon.png" style="width:50%;"></img>';
+  '<img src="./Images/female_icon.png" style="width:50%;"></img>';
 
 const democrat_icon =
-  '<img src="../Images/democratic_logo.png" style="width:65%;"></img>';
+  '<img src="./Images/democratic_logo.png" style="width:65%;"></img>';
 const republic_icon =
-  '<img src="../Images/republican_logo.png" style="width:70%;"></img>';
+  '<img src="./Images/republican_logo.png" style="width:70%;"></img>';
 const indep_icon =
-  '<img src="../Images/independent_party_logo.png" style="width:65%;"></img>';
+  '<img src="./Images/independent_party_logo.png" style="width:65%;"></img>';
 
 // Function to get the images for the table
 function generate_images(gender, party) {
