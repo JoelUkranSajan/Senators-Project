@@ -39,4 +39,6 @@ Footer - a footer element with a "© Senator Website" text on it.
 
 References :
 
-1. https://www.youtube.com/watch?v=NCLdf661ILE
+1. Fade in Fade out Animation - https://www.youtube.com/watch?v=4prVdA7_6u0&t=120s&ab_channel=KevinPowell
+2. Card Flip CSS Animation - https://www.youtube.com/watch?v=NCLdf661ILE&t=556s&ab_channel=CodingWithRuss
+3. CSS Grid - https://www.youtube.com/watch?v=EiNiSFIPIQE&ab_channel=SlayingTheDragon
