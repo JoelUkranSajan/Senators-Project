@@ -12,17 +12,19 @@ function activate_event_handlers() {
       let child_id = child.id.toString();
       const filter_entry = document.getElementById(child_id);
       let filter_list = [];
-
+      let grid_class = "";
+      let grid_width = "";
       if (child_id.includes("party")) {
         filter_list = party_list;
       } else if (child_id.includes("state")) {
         filter_list = state_list;
+        grid_class = "filter_grid_class"
       } else if (child_id.includes("rank")) {
         filter_list = rank_list;
       }
       console.log(filter_list);
       filter_entry.addEventListener("mouseenter", function () {
-        let filters = "<ul style='padding:0px;margin:0px;'>";
+        let filters = "<ul class='zero_margin_padding " + grid_class + "'>";
         const filter_id = document.getElementById(child.children[1].id);
         for (let index = 0; index < filter_list.length; index++) {
           filters +=
@@ -30,7 +32,7 @@ function activate_event_handlers() {
             filter_list[index] +
             "&quot;, &quot;" +
             child.children[0].id +
-            '&quot;)" class="filter_list_class">' +
+            '&quot;)" class="filter_list_class animate_popup_in">' +
             filter_list[index] +
             "</li>";
         }
@@ -643,7 +645,7 @@ function populate_filters(filter_array) {
     // Filtering the States based on the other 2 filters
     state_list = [
       ...all_list,
-      ...[...new Set(filter_array.map((obj) => obj.state))],
+      ...[...new Set(senators_object_list.map((obj) => obj.state))],
     ];
     rank_list = [
       ...all_list,
