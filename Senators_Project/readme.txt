@@ -42,3 +42,17 @@ References :
 1. Fade in Fade out Animation - https://www.youtube.com/watch?v=4prVdA7_6u0&t=120s&ab_channel=KevinPowell
 2. Card Flip CSS Animation - https://www.youtube.com/watch?v=NCLdf661ILE&t=556s&ab_channel=CodingWithRuss
 3. CSS Grid - https://www.youtube.com/watch?v=EiNiSFIPIQE&ab_channel=SlayingTheDragon
+4. Water CSS - https://www.youtube.com/watch?v=Tf6qm5JMUXQ&ab_channel=OnlineTutorials
+
+Few CSS Refered from 
+1. W3Schools
+2. Geeks for Geeks
+3. Lecture Notes
+
+Website Insiprations:
+
+https://www.senate.gov/
+
+Video:
+
+https://www.youtube.com/watch?v=qvgq1awXNzs&ab_channel=ArchitectoftheCapitol
