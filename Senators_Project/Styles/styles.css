@@ -502,6 +502,7 @@ video::-webkit-media-controls {
   gap: 10px;
   flex-wrap: wrap; 
   padding: 10px;
+  overflow: hidden;
 }
 
 .animate_popup_in
