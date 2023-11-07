@@ -458,7 +458,7 @@ video::-webkit-media-controls {
   font-size: large;
   text-align: center;
   position: fixed;
-  top: 20%;
+  top: 15%;
   height: 80vh;
   width: 70%;
   max-width: 300px;
