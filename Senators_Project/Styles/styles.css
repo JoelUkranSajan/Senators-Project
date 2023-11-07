@@ -458,10 +458,11 @@ video::-webkit-media-controls {
   font-size: large;
   text-align: center;
   position: fixed;
-  top: 19vh;
-  left: 5vw;
-  width: 80%; 
-  max-width: 400px; 
+  top: 20%;
+  height: 80vh;
+  width: 70%;
+  max-width: 300px;
+  max-height: 450px;
   z-index: 20;
   font-family: var(--gillfont);
 }
