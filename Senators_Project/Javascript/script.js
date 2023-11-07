@@ -567,21 +567,21 @@ function populate_senator_table(button_index) {
         party
       );
       html_senators_list +=
-        '<div class="cell" style="padding-top:60%;">' + sn_no + "</div>";
+        '<div class="cell animate_popup_in" style="padding-top:60%;">' + sn_no + "</div>";
       html_senators_list +=
-        '<div class="profile_cell" onclick="display_detils_popup(this)">' +
+        '<div class="profile_cell animate_popup_in" onclick="display_detils_popup(this)">' +
         profile_image +
         "<p>" +
         name +
         "</p></div>";
       html_senators_list +=
-        '<div class="cell">' + party_image + "<p>" + party + "</p></div>";
+        '<div class="cell animate_popup_in">' + party_image + "<p>" + party + "</p></div>";
       html_senators_list +=
-        '<div class="cell" style="padding-top:40%;">' + state + "</div>";
+        '<div class="cell animate_popup_in" style="padding-top:40%;">' + state + "</div>";
       html_senators_list +=
-        '<div class="cell">' + gender_image + "<p>" + gender + "</p></div>";
+        '<div class="cell animate_popup_in">' + gender_image + "<p>" + gender + "</p></div>";
       html_senators_list +=
-        '<div class="cell" style="padding-top:40%;">' + rank + "</div>";
+        '<div class="cell animate_popup_in" style="padding-top:40%;">' + rank + "</div>";
     }
     var element = document.getElementById("senators_list_id");
     element.innerHTML = "";
